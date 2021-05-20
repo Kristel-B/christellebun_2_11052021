@@ -1,89 +1,206 @@
 <!DOCTYPE html>
-<html lang='fr'>
+<html lang="fr">
 	<head>
 		<title>Réservia - Planificateur de vacances</title>
-		<meta charset='utf-8' />
-		<link rel='stylesheet' href='./css/style.css'>
-		<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 		<script src="https://kit.fontawesome.com/9b39bcc044.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
 		<!-- Header -->
-		<div id='header_contenair'>
-			<header class='header'>
-				<img id='logo' src='./img/logo/reservia.svg' alt='Logo de Réservia'>
-				<nav class='menu'>
-					<ul>
-						<li><a class='navigation' href='#hebergements'>Hébergements</a></li>
-            			<li><a class='navigation' href='#activites'>Activités</a></li>
-						<li><a class='register' href='#'>S'inscrire</a></li>
-					</ul>
-				</nav>
-			</header>
-		</div>
+		<header class="header">
+			<img id="logo" src="./img/logo/reservia.svg" alt="Logo de Réservia">
+			<nav class="menu">
+				<ul>
+					<li><a class="navigation" href="#hosting">Hébergements</a></li>
+					<li><a class="navigation" href="#activities">Activités</a></li>
+					<li><a class="register" href="#">S'inscrire</a></li>
+				</ul>
+			</nav>
+		</header>
+
 		<!-- Recherche et filtres-->
-		<section id="recherche">
+		<section id="search_wrapper">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <form class="searchArea">
-				<div class="searchArea__pin">
+				<div class="searchArea_pin">
 					<i class="fas fa-map-marker-alt"></i>
 				</div>
-				<input type="search" placeholder="Marseille, France" class="searchArea__text">
-				<button type="button" class="searchAreah__btn searchAreah__btn--word">Rechercher</button>
+				<input type="search" placeholder="Marseille, France" class="searchArea_text">
+				<button type="button" class="searchAreah_btn searchAreah_btn--word">Rechercher</button>
             </form>
             <div class="filters">
                 <h2>Filtres</h2>
                 <div class="filtersButton">
-                    <div class="filtersButton__bubble">
+                    <div class="filtersButton_bubble">
                         <i class="fas fa-money-bill-wave bleu"></i>
                     </div>
-                    <div class="filtersButton__text">Économique</div>
+                    <div class="filtersButton_text">Économique</div>
                 </div>
                 <div class="filtersButton">
-                    <div class="filtersButton__bubble">
+                    <div class="filtersButton_bubble">
                         <i class="fas fa-child bleu"></i>
                     </div>
-                    <div class="filtersButton__text">Familial</div>
+                    <div class="filtersButton_text">Familial</div>
                 </div>
                 <div class="filtersButton">
-                    <div class="filtersButton__bubble">
+                    <div class="filtersButton_bubble">
                         <i class="fas fa-heart bleu"></i>
                     </div>
-                    <div class="filtersButton__text">Romantique</div>
+                    <div class="filtersButton_text">Romantique</div>
                 </div>
                 <div class="filtersButton">
-                    <div class="filtersButton__bubble">
+                    <div class="filtersButton_bubble">
                         <i class="fas fa-dog bleu"></i>
                     </div>
-                    <div class="filtersButton__text">Animaux autorisés</div>
+                    <div class="filtersButton_text">Animaux autorisés</div>
                 </div>
             </div>
             <div class="searchMessage">
                 <i class="fas fa-info bleu"></i> <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
-		<!-- Footer -->
-		<div id='footer_contenair'>
-			<footer class='footer'>
-				<div id='a_propos'>
-					<h2>A propos</h2>
-					<p><a href='#'>Fonctionnement du site</a></p>
-					<p><a href='#'>Conditions générales de vente</a></p>
-					<p><a href='#'>Données et confidentialité</a></p>
+
+		<!-- Hébergements -->
+		<div id="hosting_wrapper">
+			<section id="hosting">
+				<h2>Hébergements à Marseille</h2>
+				<div class="host_result">
+					<div class="host_img_result">
+						<a class="img_effect" href="#">
+						<img class="host_img" src="./img/hebergements/small/s_auberge_la_cannebiere.jpg" alt="Auberge la Cannebière">
+						<div class="host_description">
+							<h3>Auberge la Cannebière</h3> 
+							<p>Nuit à partir de <strong>25€</strong></p>
+							<span class="rating">
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs gris"></i>
+							</span> 
+						</div>
+						</a>
+					</div>
+					<div class="host_img_result">
+						<a class="img_effect" href="#">
+						<img class="host_img" src="./img/hebergements/small/s_hotel_du_port.jpg" alt="Hôtel du port">
+						<div class="host_description">
+							<h3>Hôtel du port</h3> 
+							<p>Nuit à partir de <strong>52€</strong></p>
+							<span class="rating">
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+							</span> 
+						</div>
+						</a>
+					</div>
+					<div class="host_img_result">
+						<a class="img_effect" href="#">
+						<img class="host_img" src="./img/hebergements/small/s_hotel_les_mouettes.jpg" alt="Hôtel Les mouettes">
+						<div class="host_description">
+							<h3>Hôtel Les mouettes</h3> 
+							<p>Nuit à partir de <strong>76€</strong></p>
+							<span class="rating">
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs gris"></i>
+							</span> 
+						</div>
+						</a>
+					</div>
+					<div class="host_img_result">
+						<a class="img_effect" href="#">
+						<img class="host_img" src="./img/hebergements/small/s_hotel_de_la_mer.jpg" alt="Hôtel de la mer">
+						<div class="host_description">
+							<h3>Hôtel de la mer</h3> 
+							<p>Nuit à partir de <strong>46€</strong></p>
+							<span class="rating">
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs gris"></i>
+								<i class="fas fa-star fa-xs gris"></i>
+							</span> 
+						</div>
+						</a>
+					</div>
+					<div class="host_img_result">
+						<a class="img_effect" href="#">
+						<img class="host_img" src="./img/hebergements/small/s_auberge_le_panier.jpg" alt="Auberge Le Panier">
+						<div class="host_description">
+							<h3>Auberge Le Panier</h3> 
+							<p>Nuit à partir de <strong>23€</strong></p>
+							<span class="rating">
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs gris"></i>
+							</span> 
+						</div>
+						</a>
+					</div>
+					<div class="host_img_result">
+						<a class="img_effect" href="#">
+						<img class="host_img" src="./img/hebergements/small/s_hotel_chez_amina.jpg" alt="Hôtel chez Amina">
+						<div class="host_description">
+							<h3>Hôtel chez Amina</h3> 
+							<p>Nuit à partir de <strong>96€</strong></p>
+							<span class="rating">
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+								<i class="fas fa-star fa-xs bleu"></i>
+							</span> 
+						</div>
+						</a>
+					</div>
 				</div>
-				<div id='nos_hebergements'>
-					<h2>Nos hébergements</h2>
-					<p><a href='#'>Charte qualité</a></p>
-					<p><a href='#'>Soumettre votre hôtel</a></p>
+				<a class="more_info" href="#"><h3>Afficher plus</h3></a>
+			</section>
+
+			<!-- Populaires -->	   
+			<section id="popular">
+				<div class="title">
+					<h2>Les plus populaires</h2><i class="fas fa-chart-line"></i>
 				</div>
-				<div id='assistance'>
-					<h2>Assistance</h2>
-					<p><a href='#'>Centre d'aide</a></p>
-					<p><a href='#'>Nous contacter</a></p>
-				</div>	
-			</footer>
+			</section>
 		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<nav id="a_propos">
+				<h2>A propos</h2>
+				<ul>
+					<li><a href="#">Fonctionnement du site</a></li>
+					<li><a href="#">Conditions générales de vente</a></li>
+					<li><a href="#">Données et confidentialité</a></li>
+				</ul>
+			</nav>
+			<nav id="nos_hebergements">
+				<h2>Nos hébergements</h2>
+				<ul>
+					<li><a href="#">Charte qualité</a></li>
+					<li><a href="#">Soumettre votre hôtel</a></li>
+				</ul>
+			</nav>
+			<nav id="assistance">
+				<h2>Assistance</h2>
+				<ul>
+					<li><a href="#">Centre d'aide</a></li>
+					<li><a href="#">Nous contacter</a></li>
+				</ul>
+			</nav>	
+		</footer>
 	</body>
 </html>

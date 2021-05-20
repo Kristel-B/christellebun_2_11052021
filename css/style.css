@@ -1,6 +1,6 @@
 /* GLOBAL CSS */
 
-/* Les couleurs du site */
+/* ---------- Les couleurs du site ---------- */
 :root {
     --color-blue:#0065FC;
     --color-light:#DEEBFF;
@@ -11,9 +11,13 @@
     color: var(--color-blue);
 }
 
-/* La police du site */
+.gris {
+    color: gainsboro;
+}
+
+/* ---------- La police du site ---------- */
 body {
-    font-family: 'raleway', sans-serif;
+    font-family: "raleway", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,16 +25,22 @@ body {
 }
 
 h1 {
-    font-size: x-large;
+    font-size: 1.5em;
     margin-bottom: 0em;
 }
 
 h2 {
-    font-size: medium;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-/* Les liens */
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0em;
+}
+
+/* ---------- Les liens ---------- */
 a {
     color: black;
     text-decoration: none;
@@ -40,20 +50,14 @@ a:hover {
     color: var(--color-blue);
 }
 
-/* Header */
-#header_contenair {
-    width: auto;
-    align-content: center;
-    padding: 2em;
-}
-
+/* ---------- Header ---------- */
 header {
+    padding: 2em;
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
 }
 
-nav ul {
+header ul {
 	display: flex;
 }
 
@@ -83,8 +87,8 @@ nav li {
     color: black;
 }
 
-/* Recherche et filtres */
-#recherche {
+/* ---------- Recherche et filtres ---------- */
+#search_wrapper {
     display: flex;
     flex-flow: column wrap;
     align-content: left;
@@ -96,7 +100,7 @@ nav li {
     height: 3em;
 }
 
-.searchArea__pin {
+.searchArea_pin {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +111,7 @@ nav li {
     background-color: var(--color-grey);
 }
 
-.searchArea__text {
+.searchArea_text {
     width: 15em;
     border: 1px solid var(--color-grey);
 }
@@ -116,10 +120,10 @@ input[type="search"] {
     padding: 1em;
     font-size: 1em;
     font-weight: bold;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
-.searchAreah__btn {
+.searchAreah_btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,11 +139,11 @@ input[type="search"] {
     background-color: var(--color-blue);
 }
 
-.searchAreah__btn:hover {
+.searchAreah_btn:hover {
     color: black;
 }
 
-.searchAreah__btn:active {
+.searchAreah_btn:active {
     box-shadow: inset -2px -2px 3px black,
                 inset 2px 2px 3px var(--color-light);
 }
@@ -174,7 +178,7 @@ input[type="search"] {
                 inset 2px 2px 3px var(--color-light);
 }
 
-.filtersButton__bubble {
+.filtersButton_bubble {
     height: 3.4em;
     width: 3.4em;
     border-radius: 50%;
@@ -186,13 +190,14 @@ input[type="search"] {
     margin-left: -1em;
 }
 
-.filtersButton__text {
+.filtersButton_text {
     margin: 1em;
 }
 
 .searchMessage {
     display: flex;
     align-items: center;
+    margin-top: 1em;
 }
 
 .searchMessage svg.fa-info {
@@ -203,12 +208,97 @@ input[type="search"] {
     font-size: 0.8em;
 }
 
-/* Footer */
+/* ---------- Hébergements ---------- */
+#hosting_wrapper {
+    display: flex;
+    height: fit-content;
+}
+
+#hosting {
+    background-color: var(--color-grey);
+    border-radius: 2em;
+    padding: 2em;
+    margin: 1em 2em;
+}
+
+.host_result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.host_img_result {
+    background-color: white;
+    padding: 0.2em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    height: fit-content;
+    width: 15em;
+}
+
+.host_img {
+    width: 100%;
+    height: 8em;
+    border-radius: 1em 1em 0 0;
+}
+
+.host_description {
+    margin: 0.5em;
+}
+
+.host_description p {
+    margin: 0.2em 0 0.2em 0;
+}
+
+/* ---------- Populaires ---------- */
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#popular {
+    background-color: var(--color-grey);
+    border-radius: 2em;
+    padding: 2em;
+    margin: 1em 2em 1em 0;
+}
+
+.pop_result {
+}
+
+.result_pop_img {
+    display: flex;
+    background-color: white;
+    padding: 0.2em;
+    border-radius: 1em;
+    height: 5em;
+    width: 8em;
+    margin-bottom: 2em;
+}
+
+.pop_img {
+    flex: 1;
+    width: 100%;
+    height: 8em;
+    border-radius: 1em;
+}
+
+.pop_description {
+    flex: 1;    
+}
+
+
+/* ---------- Footer ---------- */
 footer {
 	display: flex;
 	background-color: var(--color-grey);
 	justify-content: space-between;
 	padding: 2em;
+}
+
+footer ul {
+    padding: 0;
 }
 
 #a_propos {
