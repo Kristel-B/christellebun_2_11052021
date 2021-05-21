@@ -51,9 +51,17 @@ a:hover {
 }
 
 /* ---------- Les images ---------- */
+#logo {
+    object-fit: none;
+}
 
 img {
     object-fit: cover;
+}
+
+.img_effect:hover, .img_effect a, .host_img_result:hover {
+    transform: scale(1.1);
+    color: black;
 }
 
 /* ---------- Header ---------- */
