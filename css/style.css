@@ -18,7 +18,9 @@
 /* ---------- La police du site ---------- */
 body {
     font-family: "raleway", sans-serif;
-    margin: 0;
+    margin: auto;
+    min-width: 350px;
+    max-width: 1500px;
 }
 
 h1 {
@@ -118,20 +120,28 @@ nav li {
     }
     .menu {
         flex-direction: column-reverse;
+        width: 100%;
     }
     #navigation {
         justify-content: space-around;
+        padding: 0;
     }
     #register {
         justify-content: flex-end;
     }
     .navigation:hover {
         border-top: none;
+    }
+    .nav_bar:hover {
         border-bottom: 2px solid var(--color-blue);
         padding-bottom: 1em;
     }
     .register:hover {
         border-top: none;
+    }
+    .nav_bar {
+        width: 50%;
+        text-align: center;
     }
     
 }
