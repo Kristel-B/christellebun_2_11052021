@@ -39,6 +39,20 @@ h3 {
     margin: 0em;
 }
 
+@media all and (max-width:1023px) {
+    h1 {
+        font-size: 1.7em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.3em;
+    }
+}
+
 /* ---------- Les liens ---------- */
 a {
     color: black;
@@ -63,7 +77,7 @@ img {
     color: black;
 }
 
-@media all and (max-device-width:979px) {
+@media all and (max-width:1023px) {
     .img_effect:hover, .img_effect a, .host_img_result:hover {
         color: black;
         transform: scale(1.05);
@@ -111,7 +125,7 @@ nav li {
     color: black;
 }
 
-@media all and (max-device-width:979px) {
+@media all and (max-width:1023px) {
     .header {
         width: 100%;
     }
@@ -280,7 +294,7 @@ input[type="search"] {
     font-size: 0.8em;
 }
 
-@media all and (max-device-width:979px) {
+@media all and (max-width:1023px) {
     #search_wrapper {
         width: 100%;
     }
@@ -347,13 +361,16 @@ input[type="search"] {
 
 .description {
     margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .description p {
     margin: 0.2em 0 0.2em 0;
 }
 
-@media all and (max-device-width:979px) {
+@media all and (max-width:1023px) {
     #hosting_wrapper {
         flex-direction: column-reverse;
     }
@@ -368,6 +385,13 @@ input[type="search"] {
     .host_img {
         width: 100%;
         height: 15em;
+    }
+    .description p {
+        font-size: 1.2em;
+    }
+    .rating {
+        font-size: 1.5em;
+        
     }
 }
 /* ---------- Populaires ---------- */
@@ -397,12 +421,12 @@ input[type="search"] {
 }
 
 .pop_img {
-    width: 8em;
+    width: 40%;
     height: 100%;
     border-radius: 1em 0 0 1em;
 }
 
-@media all and (max-device-width:979px) {
+@media all and (max-width:1023px) {
     #popular {
         width: 100%;
         margin: 0;
@@ -413,7 +437,6 @@ input[type="search"] {
         width: 100%;
     }
     .pop_img {
-        width: 10em;
         height: 15em;
     }
 }
@@ -461,7 +484,7 @@ input[type="search"] {
     border-radius: 0 0 1em 1em;
 }
 
-@media all and (max-device-width: 979px) {
+@media all and (max-width: 1023px) {
     #activity {
         margin: 0;
         width: 100%;
@@ -505,7 +528,7 @@ footer li {
 	width: 30%;
 }
 
-@media all and (max-device-width:979px) {
+@media all and (max-width:1023px) {
     footer {
         flex-direction: column;
         width: 100%;
